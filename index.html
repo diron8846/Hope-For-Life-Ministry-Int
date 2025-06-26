@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hope for Life Jesus Ministry International</title>
+    <meta name="description" content="Hope for Life Jesus Ministry International - Transforming lives through the love of Christ. Bible College, Ministry Programs, and Community Outreach in Nairobi, Kenya.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="assets/logo.png" alt="Hope for Life Ministry Logo" class="nav-logo">
+                <span class="nav-title">Hope for Life</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <button class="nav-btn" onclick="scrollToSection('home')">Home</button>
+                <button class="nav-btn" onclick="scrollToSection('about')">About</button>
+                <button class="nav-btn" onclick="scrollToSection('ministries')">Ministries</button>
+                <button class="nav-btn" onclick="scrollToSection('bible-college')">Bible College</button>
+                <button class="nav-btn" onclick="scrollToSection('gallery')">Gallery</button>
+                <button class="nav-btn" onclick="scrollToSection('contact')">Contact</button>
+                <button class="theme-toggle" onclick="toggleTheme()">
+                    <i data-lucide="sun" class="theme-icon"></i>
+                </button>
+            </div>
+            
+            <button class="mobile-toggle" onclick="toggleMobileMenu()">
+                <i data-lucide="menu" class="mobile-icon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-logo">
+                <img src="assets/logo.png" alt="Hope for Life Ministry Logo">
+            </div>
+            <h1>Hope for Life Jesus Ministry</h1>
+            <p>Transforming lives through the love of Christ. Join our community of faith, hope, and love.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('about')">Learn More About Us</button>
+                <button class="btn btn-secondary" onclick="scrollToSection('contact')">Join Our Community</button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i data-lucide="chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Our Ministry</h2>
+                <div class="divider"></div>
+                <p>Founded on faith, built on love, and dedicated to serving God's people.</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Story</h3>
+                    <p>Hope for Life Jesus Ministry International was established with a divine calling to spread the Gospel of Jesus Christ and transform lives through His love. Located in the heart of Nairobi, Kenya, our ministry serves as a beacon of hope for individuals seeking spiritual growth and biblical education.</p>
+                    
+                    <h3>Our Mission</h3>
+                    <p>To equip believers with sound biblical knowledge, foster spiritual growth, and create a community where faith flourishes and lives are transformed through the power of Jesus Christ.</p>
+                </div>
+                
+                <div class="pastor-info">
+                    <img src="assets/pastor-dismus.jpg" alt="Pastor Dismus Mutuku" class="pastor-photo">
+                    <div class="pastor-details">
+                        <h4>Pastor Dismus Mutuku</h4>
+                        <p class="pastor-title">Senior Pastor & Founder</p>
+                        <p>With over 15 years of ministry experience, Pastor Dismus leads our congregation with wisdom, compassion, and unwavering faith in God's word.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="values-grid">
+                <div class="value-card">
+                    <i data-lucide="heart" class="value-icon"></i>
+                    <h4>Love & Compassion</h4>
+                    <p>Showing Christ's love to all through acts of kindness and service.</p>
+                </div>
+                <div class="value-card">
+                    <i data-lucide="book-open" class="value-icon"></i>
+                    <h4>Biblical Truth</h4>
+                    <p>Teaching and living according to God's word with integrity.</p>
+                </div>
+                <div class="value-card">
+                    <i data-lucide="users" class="value-icon"></i>
+                    <h4>Community</h4>
+                    <p>Building strong relationships and supporting one another in faith.</p>
+                </div>
+                <div class="value-card">
+                    <i data-lucide="hand-heart" class="value-icon"></i>
+                    <h4>Service</h4>
+                    <p>Serving God and our community with dedication and humility.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ministries Section -->
+    <section id="ministries" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Ministries</h2>
+                <div class="divider"></div>
+                <p>Serving God's people through diverse ministry programs.</p>
+            </div>
+            
+            <div class="ministries-grid">
+                <div class="ministry-card">
+                    <i data-lucide="heart" class="ministry-icon"></i>
+                    <h3>Worship & Praise</h3>
+                    <p>Join us every Sunday for uplifting worship services filled with praise, prayer, and powerful biblical teaching.</p>
+                </div>
+                <div class="ministry-card">
+                    <i data-lucide="users" class="ministry-icon"></i>
+                    <h3>Youth Ministry</h3>
+                    <p>Empowering young people with biblical values and providing mentorship for their spiritual journey.</p>
+                </div>
+                <div class="ministry-card">
+                    <i data-lucide="baby" class="ministry-icon"></i>
+                    <h3>Children's Ministry</h3>
+                    <p>Nurturing children in the love of Christ through engaging Bible stories and activities.</p>
+                </div>
+                <div class="ministry-card">
+                    <i data-lucide="hand-heart" class="ministry-icon"></i>
+                    <h3>Community Outreach</h3>
+                    <p>Reaching out to our community with love, support, and practical assistance to those in need.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bible College Section -->
+    <section id="bible-college" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Bible College</h2>
+                <div class="divider"></div>
+                <p>Quality biblical education for ministry preparation.</p>
+            </div>
+            
+            <div class="college-content">
+                <div class="programs-grid">
+                    <div class="program-card">
+                        <i data-lucide="graduation-cap" class="program-icon"></i>
+                        <h3>Diploma in Theology</h3>
+                        <p>Comprehensive 2-year program covering biblical studies, theology, and ministry practice.</p>
+                        <ul>
+                            <li>Old & New Testament Studies</li>
+                            <li>Systematic Theology</li>
+                            <li>Pastoral Ministry</li>
+                            <li>Christian Leadership</li>
+                        </ul>
+                    </div>
+                    <div class="program-card">
+                        <i data-lucide="id-card" class="program-icon"></i>
+                        <h3>Certificate Programs</h3>
+                        <p>Specialized 6-month courses for focused ministry training.</p>
+                        <ul>
+                            <li>Biblical Counseling</li>
+                            <li>Worship Leadership</li>
+                            <li>Christian Education</li>
+                            <li>Evangelism & Missions</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="faculty-section">
+                    <h3>Our Teachers</h3>
+                    <div class="faculty-grid">
+                        <div class="faculty-card">
+                            <img src="assets/ev-stanley.jpg" alt="Ev. Stanley George">
+                            <h4>Ev. Stanley George</h4>
+                            <p>Biblical Studies</p>
+                        </div>
+                        <div class="faculty-card">
+                            <img src="assets/pastor-jose.jpg" alt="Pastor Jose Mathew">
+                            <h4>Pastor Jose Mathew</h4>
+                            <p>Systematic Theology</p>
+                        </div>
+                        <div class="faculty-card">
+                            <img src="assets/ev-ronald.jpg" alt="Ev. Ronald Maina">
+                            <h4>Ev. Ronald Maina</h4>
+                            <p>Pastoral Ministry</p>
+                        </div>
+                        <div class="faculty-card">
+                            <img src="assets/pst-larmack.jpg" alt="Pst Larmack Oyath">
+                            <h4>Pst Larmack Oyath</h4>
+                            <p>Mission Technical Adviser</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Graduates</h2>
+                <div class="divider"></div>
+                <p>Celebrating the faithful servants who have completed their biblical education and are now equipped to serve God's kingdom.</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openModal('assets/graduates-1.jpg')">
+                    <img src="assets/graduates-1.jpg" alt="Hope for Life Ministry Graduates - Class 2023">
+                    <div class="gallery-overlay">
+                        <i data-lucide="zoom-in"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal('assets/graduates-2.jpg')">
+                    <img src="assets/graduates-2.jpg" alt="Hope for Life Ministry Graduates - Class 2024">
+                    <div class="gallery-overlay">
+                        <i data-lucide="zoom-in"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal('assets/graduates-3.jpg')">
+                    <img src="assets/graduates-3.jpg" alt="Hope for Life Ministry Graduates - Recent Class">
+                    <div class="gallery-overlay">
+                        <i data-lucide="zoom-in"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prayer Request Section -->
+    <section id="prayer" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Prayer Requests</h2>
+                <div class="divider"></div>
+                <p>Submit your prayer requests and let our community lift you up in prayer.</p>
+            </div>
+            
+            <div class="prayer-form-container">
+                <form id="prayer-form" class="prayer-form">
+                    <div class="form-group">
+                        <label for="prayer-name">Your Name</label>
+                        <input type="text" id="prayer-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="prayer-email">Email Address</label>
+                        <input type="email" id="prayer-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="prayer-request">Prayer Request</label>
+                        <textarea id="prayer-request" name="request" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Prayer Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <div class="divider"></div>
+                <p>Get in touch with us. We'd love to hear from you.</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item contact-icon">
+                        <i data-lucide="phone" class="contact-icon-svg"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+254 123 456 789</p>
+                        </div>
+                    </div>
+                    <div class="contact-item contact-icon">
+                        <i data-lucide="mail" class="contact-icon-svg"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>dismusmutuku@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item contact-icon">
+                        <i data-lucide="map-pin" class="contact-icon-svg"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Nairobi, Kenya</p>
+                        </div>
+                    </div>
+                    <div class="contact-item contact-icon">
+                        <i data-lucide="clock" class="contact-icon-svg"></i>
+                        <div>
+                            <h4>Service Times</h4>
+                            <p>Sunday: 9:00 AM - 12:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-name">Name</label>
+                                <input type="text" id="contact-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email</label>
+                                <input type="email" id="contact-email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Subject</label>
+                            <input type="text" id="contact-subject" name="subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/logo.png" alt="Hope for Life Ministry Logo" class="footer-logo">
+                    <h3>Hope for Life Jesus Ministry</h3>
+                    <p>Transforming lives through the love of Christ.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#ministries">Ministries</a></li>
+                        <li><a href="#bible-college">Bible College</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hope for Life Jesus Ministry International. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="image-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-image" src="" alt="">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
